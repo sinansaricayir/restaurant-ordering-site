@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Restaurant Web Site</title>
+    <title>Restaurant Web Site | Homepage</title>
 </head>
 
 <body>
@@ -20,24 +20,63 @@
         </a>
         <nav class="navbar">
             <a href="/" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Product</a>
-            <a href="#">Review</a>
-            <a href="#">Contact</a>
-            <a href="#">Blogs</a>
+            <a href="/about.html">About</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/products.html">Products</a>
+            <a href="/review.html">Review</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blogs.html">Blogs</a>
         </nav>
         <div class="buttons">
-            <button>
+            <button id="search-button">
                 <i class="fas fa-search"></i>
             </button>
-            <button>
+            <button id="cart-button">
                 <i class="fas fa-shopping-cart"></i>
             </button>
-            <button>
+            <button id="menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
+
+        <div class="search-form">
+            <input type="text" placeholder="search here" class="search-input" id="search-box">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="image">
+                    <img src="images/menu-1.png" alt="">
+                </div>
+                <div class="cart-info">
+                    <h1>Cart İtem 01</h1>
+                    <span>$15.99/-</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="image">
+                    <img src="images/menu-2.png" alt="">
+                </div>
+                <div class="cart-info">
+                    <h1>Cart İtem 02</h1>
+                    <span>$23.99/-</span>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="image">
+                    <img src="images/menu-3.png" alt="">
+                </div>
+                <div class="cart-info">
+                    <h1>Cart İtem 03</h1>
+                    <span>$19.99/-</span>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#" class="btn">checkout now</a>
+            </div>
+        </div>
+
     </header>
     <!-- ! header section end -->
 
@@ -346,12 +385,12 @@
         </div>
         <div class="links">
             <a href="/" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Product</a>
-            <a href="#">Review</a>
-            <a href="#">Contact</a>
-            <a href="#">Blogs</a>
+            <a href="/about.html">About</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/products.html">Products</a>
+            <a href="/review.html">Review</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blogs.html">Blogs</a>
         </div>
 
         <div class="credit">
@@ -360,6 +399,7 @@
     </section>
     <!-- ! footer end -->
 
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
